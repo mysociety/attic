@@ -1,0 +1,98 @@
+<?php
+/*
+ * general-example:
+ * Example values for the "general" config file.
+ *
+ * Configuration parameters, in PHP syntax. Configuration parameters are set
+ * using the PHP define('OPTION_...', '...') function. Both perl and PHP code
+ * parse this properly, so you can use comments and conditionals and whatnot,
+ * but unless essential it's better to keep it simple....
+ *
+ * Copy this file to one called "general" in the same directory.  Or
+ * have multiple config files and use a symlink to change between them.
+ * 
+ * Copyright (c) 2007 UK Citizens Online Democracy. All rights reserved.
+ * Email: matthew@mysociety.org; WWW: http://www.mysociety.org
+ *
+ * $Id: general-example,v 1.14 2010-09-23 15:12:49 matthew Exp $
+ * 
+ */
+
+define('DEVSITE', true);
+
+// Paths
+define('VHOST_DIR', '/data/vhost');
+define('ROOT_DIR', VHOST_DIR . '/groups');
+define('INCLUDE_DIR', ROOT_DIR . '/includes');
+define('PEAR_DIR', INCLUDE_DIR . '/PEAR');
+define('DATA_DIR', ROOT_DIR . '/data');
+define('DOC_DIR' , ROOT_DIR . '/docs');
+define('LANGUAGE_DIR' , ROOT_DIR . '/languages/');
+define('TMP_DIR', ROOT_DIR . '/tmp');
+define('LOG_DIR', ROOT_DIR . '/logs');
+define('SMARTY_PATH', DATA_DIR . '/smarty_compile');
+define('TEMPLATE_DIR', ROOT_DIR . '/templates');	
+define('CACHE_DIR', DATA_DIR . '/cache');
+
+define('CACHE_TIME', 3600);
+
+define('SCRAPE_METHOD', 'PEAR');
+
+// Define the database details
+    
+define('OPTION_GNY_DB_HOST', 'localhost');
+define('OPTION_GNY_DB_NAME', 'groups');
+define('OPTION_GNY_DB_USER', 'root');
+define('OPTION_GNY_DB_PASS', '');
+define('SQL_DEBUG_LEVEL', 0 );
+
+//urls
+define("WWW_SERVER", "http://localhost.groups"); 
+define("ADMIN_SERVER", "http://localhost.groups/admin");
+define("DOMAIN", "localhost.groups"); 
+
+//confirmation
+define("CONFIRMATION_BASE_URL", WWW_SERVER . '/confirmed.php?q=');
+define("CONFIRMATION_EMAIL", 'confirm@' . DOMAIN);
+
+//Email titles
+define("EMAIL_PREFIX", '[groupsnearyou.com] ');	
+define("BUG_EMAIL_PREFIX", '[groupsnearyou.com bug]');
+
+//Email addresses
+define("CONTACT_EMAIL", 'team@' . DOMAIN);	
+define("BUG_FROM_EMAIL", 'bugs@' . DOMAIN);	
+define("BUG_TO_EMAIL", 'YOUR EMAIL ADDRESS');
+
+define('OPTION_EVEL_URL', '...');
+
+//Site name
+define("SITE_NAME", "GroupsNearYou.com"); 
+define("SITE_TAG_LINE", "meet your neighbours");     
+
+define ('DATETIMEFORMAT_SQL',	"Y-m-d H:i:s"); // 2006-06-02 12:23:23
+
+define('SESSION_COOKIE_LIFETIME', 0);
+define('SESSION_COOKIE_PATH', '/');
+define('SESSION_COOKIE_DOMAIN', null);
+
+//map stuff
+define('GOOGLE_MAPS_KEY', '');
+define('MAX_MAP_ZOOM', 11);
+
+//email addresses
+define('GROUP_ORGANISERS_GROUP_URL', 'http://groups.google.com/group/groupsnearyou/');
+
+//Stats
+define('RECORD_STATS', true);
+
+//Search buffering
+define('POPULATION_THRESHOLD', 150000);
+define('MAX_KM_DISTANCE_BUFFER', 80);
+
+// Tracking
+define('OPTION_TRACKING', 0);   // off by default
+define('OPTION_TRACKING_URL', 'http://path/to/web/bug');
+define('OPTION_TRACKING_SECRET', 'really-secret-value');
+
+?>
