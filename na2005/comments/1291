@@ -3,6 +3,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <title>Not Apathetic</title>
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,600">
+<link rel="stylesheet" type="text/css" media="all" href="/assets/css/banner.css">
 <link rel="stylesheet" type="text/css" title="mainscreen" href="../css/notnetscape.css" media="screen, projection" />
 <!-- <link rel="stylesheet" type="text/css" title="portable" href="/css/handheld.css" media="handheld" /> -->
 <link rel="shortcut icon" href="../favicon.ico" />
@@ -10,6 +12,16 @@
 <script type="text/javascript" src="../forms.js"></script>
 </head>
 <body>
+
+<div class="retirement-banner retirement-banner--notapathetic">
+    <div class="retirement-banner__inner">
+        <a class="retirement-banner__logo" href="https://mysociety.org">mySociety</a>
+        <p class="retirement-banner__description">
+            NotApathetic is closed to new submissions. The site is available as an
+            archive for you to browse. <a href="/closed">Find out more...</a>
+        </p>
+    </div>
+</div>
 <div id="wrap"><a name="top"></a>
 <div id="top">
 <h1><a href="../index.html"><img src="../images/na2.png" alt="Not Apathetic" /></a></h1>
@@ -97,17 +109,6 @@ href="/data/"><span>rss</span>+</a></li>-->
 </form> -->
 </div>
 	<div id="inputBox">
-		<p>Not Apathetic is now closed to new submissions - we will be
-publishing an analysis on this site soon, and making the data (minus
-email addresses) available for study. The explanations and responses
-will remain here indefinitely. Add your name to the mySociety news
-list if you'd like to be told when we publish our analysis, and the
-underlying data</p>
-
-<p> <form method="post" action="http://www.mysociety.org/subscribe.php"> Subscribe for occasional <strong>mySociety updates</strong>
-<br /><input type="text" name="subv" value="your e-mail address" onfocus="this.value=''" />
-    <input type="submit" name="sub" value="go!" />
-</form> </p>
 
 		<h2>About Not Apathetic</h2>
 <p>NotApathetic was built so that people who are planning not to vote
@@ -127,13 +128,7 @@ be counted. So if you want to record a vote for "none of the
 above", you can.</small>
 
 				<h2>Search</h2>
-<!--		<form method="get" action="/cgi-bin/search.cgi" id="search">
-		<fieldset>
-		<input type="text" name="q" id="q" size="30" />
-		<input type="submit" value="Go" class="submit" />
-		</fieldset>
-		</form>
-        -->
+
 <!-- SiteSearch Google -->
 <FORM method=GET action="http://www.google.com/search">
 <input type=hidden name=ie value=UTF-8>
@@ -147,8 +142,7 @@ border="0" ALT="Google"></A>-->
 <INPUT TYPE=text name=q size=31 maxlength=255 value="">
 <INPUT type=submit name=btnG VALUE="Search Not Apathetic">
 <font size=-1>
-<input type=hidden name=domains value="http://www.notapathetic.com"><br>
-<input type=hidden name=sitesearch value="http://www.notapathetic.com"><br>
+<input type=hidden name=sitesearch value="notapathetic.com"><br>
 <!--<input type=radio name=sitesearch value=""> WWW <input type=radio
 name=sitesearch value="http://www.notapathetic.com" checked>
 notapathetic.com <br>-->
@@ -163,7 +157,7 @@ notapathetic.com <br>-->
 
 <div id="footer">
 <small>Built by </small><a href="http://www.mysociety.org/"><img src="../images/mysociety.gif" alt="mySociety" /></a>
-<ul class="nav footer"><li><a href="mailto:team@notapathetic.com"><span>c</span>ontact us</a></li>
+<ul class="nav footer">
 <li><a href="../about/privacy/index.html"><span>p</span>rivacy policy</a></li></ul>
 <div class="hideme"><a href="1291#top">back to top of page</a></div>
 </div>

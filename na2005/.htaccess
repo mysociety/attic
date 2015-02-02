@@ -2,6 +2,9 @@
     ForceType text/html
 </FilesMatch>
 
+RewriteEngine on
+RewriteRule ^closed$ closed.html
+
 RedirectPermanent /random http://uk2005.notapathetic.com/
 RedirectPermanent /search http://uk2005.notapathetic.com/
 RedirectPermanent /new http://uk2005.notapathetic.com/
